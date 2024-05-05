@@ -1,0 +1,115 @@
+{
+  "__guid": "3c05e8a0-82bf-49a7-97fc-a5fc0b03094b",
+  "GameObjects": [
+    {
+      "__guid": "1f6eb8cd-27f0-427c-95bb-de3dd18bbdf4",
+      "Name": "Sun",
+      "Rotation": "0,0.5,0,0.8660254",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "8c05ad66-1481-457e-b5e3-6b60c4fc7754",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "__guid": "c7212923-cb78-4886-922c-da1c7906f571",
+      "Name": "Camera",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "6097317c-82d5-400e-af9a-114547bfe469",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 90,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 1
+        }
+      ]
+    },
+    {
+      "__guid": "43a3d632-5852-4045-a224-6bc3c00a0181",
+      "Name": "Freecam",
+      "Position": "0,0,72",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Duccsoft.Freecam",
+          "__guid": "32bb14de-c193-40c3-8941-854dfb6bdc12",
+          "ClampPitch": true,
+          "HighSpeedFactor": 2.5,
+          "LowSpeedFactor": 0.25,
+          "Speed": 300,
+          "UseCollision": true
+        }
+      ]
+    },
+    {
+      "__guid": "41ec098e-c14c-479c-a72f-7c19d87b2d84",
+      "Name": "Object",
+      "Position": "34.20163,-106.3203,96.89583",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "ce0bdd5b-be66-4e4e-af95-bb102414afb7",
+          "MapName": "hadyn.player_controller_test_course_v1",
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "main",
+  "Description": "",
+  "LastSaved": "2024-05-05T01:26:30.0604311-06:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}
