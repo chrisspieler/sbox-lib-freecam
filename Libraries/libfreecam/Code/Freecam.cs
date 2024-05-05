@@ -4,6 +4,9 @@ namespace Duccsoft;
 /// Enables the use of AnalogMove and AnalogLook to control the position and rotation 
 /// of the main camera of the scene.
 /// </summary>
+[Title( "Freecam" )]
+[Category( "Camera" )]
+[Icon( "control_camera" )]
 public sealed partial class Freecam : Component
 {
 	/// <summary>
