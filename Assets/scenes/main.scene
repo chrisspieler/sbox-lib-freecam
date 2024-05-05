@@ -50,7 +50,7 @@
     },
     {
       "__guid": "43a3d632-5852-4045-a224-6bc3c00a0181",
-      "Name": "Freecam",
+      "Name": "Initial Freecam",
       "Position": "0,0,72",
       "Enabled": true,
       "NetworkMode": 2,
@@ -69,7 +69,7 @@
     },
     {
       "__guid": "41ec098e-c14c-479c-a72f-7c19d87b2d84",
-      "Name": "Object",
+      "Name": "Map",
       "Position": "34.20163,-106.3203,96.89583",
       "Enabled": true,
       "NetworkMode": 2,
@@ -83,6 +83,20 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "1ac7df70-7bf1-41aa-ba85-fcc847c34103",
+      "Name": "Freecam Listener",
+      "Position": "1015.762,-257.7372,86.46482",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Duccsoft.FreecamTest",
+          "__guid": "1345b55a-fc8c-4db2-81c9-2c0e2bf56001"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -108,7 +122,7 @@
   },
   "Title": "main",
   "Description": "",
-  "LastSaved": "2024-05-05T01:26:30.0604311-06:00",
+  "LastSaved": "2024-05-05T04:46:57.8443605-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

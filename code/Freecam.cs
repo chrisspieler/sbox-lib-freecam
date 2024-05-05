@@ -43,6 +43,18 @@ public sealed partial class Freecam : Component
 	/// </summary>
 	private CharacterController _controller;
 
+	protected override void OnEnabled()
+	{
+		OnFreecamStart?.Invoke( this );
+	}
+
+	protected override void OnDisabled()
+	{
+		OnFreecamEnd?.Invoke( this );
+		_controller?.Destroy();
+		_controller = null;
+	}
+
 	protected override void OnUpdate()
 	{
 		if ( _camera is null || !_camera.IsMainCamera )
@@ -54,12 +66,6 @@ public sealed partial class Freecam : Component
 
 		RotateMainCamera();
 		MoveMainCamera();
-	}
-
-	protected override void OnDisabled()
-	{
-		_controller?.Destroy();
-		_controller = null;
 	}
 
 	protected override void OnFixedUpdate()
